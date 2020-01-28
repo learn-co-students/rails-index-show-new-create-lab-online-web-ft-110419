@@ -1,0 +1,8 @@
+<h1>All Coupons</h1>
+<div>
+  <% @coupons.each do |coupon| %>
+    <div><%= coupon.coupon_and_store%></div>
+</div>
+<%= form_tag new_coupon do %>
+  <%= submit_tag 'New coupon' %>
+<%end%>
